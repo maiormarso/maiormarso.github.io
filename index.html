@@ -76,14 +76,16 @@ text-align:center;
 	  </style>
 </head>
 <body>
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0';
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>	
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0"></script>
+
+  <!-- Your like button code -->
+  <div class="fb-like" 
+    data-href="https://maiormarso.github.io" 
+    data-layout="standard" 
+    data-action="like" 
+    data-show-faces="true">
+  </div>	
 <div id="wrapper">
 	
 <div id="header">

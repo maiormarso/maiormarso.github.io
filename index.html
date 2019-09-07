@@ -6,6 +6,13 @@
 <meta name="description" content="Took the plunge and enrolled in the LambdaSchools Data Science Dept " />
 <meta name="keywords" content="" />
 
+  <meta property="og:url"           content="https://maiormarso.com />
+  <meta property="og:type"          content="website" />
+  <meta property="og:title"         content="Maior Marso" />
+  <meta property="og:description"   content="Maior Marso is enrolled at Lambda School" />
+ 
+<!-- <meta property="og:image"         content="https://www.your-domain.com/path/image.jpg" />	
+-->	
 <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"></meta>
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <meta name="rating" content="Mature" />
@@ -101,8 +108,17 @@ Apps I have written:<br />
 <a href="http://rener.art/biorhythm"><font color="#003300"  size="3"> Biorhythms </font></a><br />
 <br /><br
 <font  color="#003300">
-<div class="fb-like" data-href="https://www.facebook.com/profile.php?id=100010143165369" data-layout="standard" data-action="like" data-size="small" data-show-faces="false" data-share="true">
-</div>
+  <!-- Load Facebook SDK for JavaScript -->
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0"></script>
+
+  <!-- Your like button code -->
+  <div class="fb-like" 
+    data-href="https://www.your-domain.com/your-page.html" 
+    data-layout="standard" 
+    data-action="like" 
+    data-show-faces="true">
+  </div>
 </font>
 <?php
   include("counter.php");

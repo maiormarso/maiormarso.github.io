@@ -120,7 +120,26 @@ comment:
 <textarea name="notes" rows="3" cols="24"></textarea>
 <input type="submit" value="Submit" />
 </form>
+<font size="3" color="gold">
+www.marso.space
+<br /> 
+Web Page visits = 
+<?php
+ $count_my_page = ("http://trecton.com/images/visitcount.txt");
+ $hits = file($count_my_page);
+$hits[0] ++;
+ $fp = fopen($count_my_page , "w");
+ fputs($fp , "$hits[0]");
+ fclose($fp);
 
+echo $hits[0];
+ ?>
+</font>
+<?php
+  include("counter.php");
+?></center>
+</form>
+	
 </div>
 
 

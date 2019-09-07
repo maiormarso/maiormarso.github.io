@@ -66,8 +66,17 @@ text-align:center;
 }
 -->
 </style>
+	  </style>
 </head>
 <body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>	
 <div id="wrapper">
 	
 <div id="header">
@@ -90,33 +99,10 @@ If you must know!
 Apps I have written:<br />
 <a href="http://spanishable.net" target=”_blank” ><font color="#003300"  size="3"> Spanish Lessons </font></a><br />
 <a href="http://rener.art/biorhythm"><font color="#003300"  size="3"> Biorhythms </font></a><br />
-<br />
+<br /><br
 <font  color="#003300">
-<form method="post" action="images/2.php">
-<!-- DO NOT change ANY of the php sections -->
-<input type="hidden" name="ip" value="67.172.121.240" />
-<input type="hidden" name="httpref" value="http://rener.art" />
-<input type="hidden" name="httpagent" value="Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0; BOIE9;ENUSMSE)" />
-e-mail:
-<input type="text" name="visitormail" size="24"> 
-<br />
-comment:
-<textarea name="notes" rows="3" cols="24"></textarea>
-<input type="submit" value="Submit" />
-</form>
-<font size="3" color="#524a26">
-www.marso.space
-<br /> 
-Web Page visits = 
-<?php
- $count_my_page = ("http://trecton.com/images/visitorcount.txt");
- $hits = file($count_my_page);
-$hits[0] ++;
- $fp = fopen($count_my_page , "w");
- fputs($fp , "$hits[0]");
- fclose($fp);
-echo $hits[0];
- ?>
+<div class="fb-like" data-href="https://www.facebook.com/profile.php?id=100010143165369" data-layout="standard" data-action="like" data-size="small" data-show-faces="false" data-share="true">
+</div>
 </font>
 <?php
   include("counter.php");
